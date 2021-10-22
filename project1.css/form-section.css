@@ -1,0 +1,79 @@
+
+ /*form section*/
+ .form{
+    padding:0 0 30px 0;
+}
+ .form-info{
+    overflow: hidden;
+}
+.form-info-item{
+    float: left;
+    width: 30%;
+    text-align: center;
+}
+.form-info-item .fa {
+    color:var(--bluecolor);
+}
+.form-info-item .fal{
+    color: var(--bluecolor);
+}
+.fa-title{
+    text-transform: capitalize;
+    margin: 10px 0;
+}
+.fa-des{
+   text-transform: capitalize;
+   color: rgb(188, 192, 194) ;
+}
+.web-info{
+    padding: 30px 200px;
+}
+.web-info .input-1{
+    border: 1px solid rgb(236, 234, 234);
+    background-color:rgb(248, 246, 246) ;
+        width: 300px;
+        height: 30px;
+        opacity: 0.7;
+}
+.web-info .input-2{
+    display: block;
+    border: 1px solid rgb(236, 234, 234);
+    background-color:rgb(248, 246, 246) ;
+        width:604.5px;
+        height: 30px;
+        opacity: 0.7;
+        margin: 10px 0;
+}
+.input-2.msg{
+    height: 60px;
+}
+.input-1:focus , .input-2:focus{
+    border:2px solid var(--bluecolor);
+    opacity: 1;
+    background-color:rgba(248, 246, 246, 0.945) ;
+    outline: none;
+}
+.form-button{
+    background-color:var(--bluecolor) ;
+    color: white;
+    width: 120px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    margin: 0 50%;
+    transform: translate(-50%,0);
+    position: relative;
+}
+.form-button:after{
+    position: absolute;
+    display: block;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    
+}
+.form-button:hover::after{
+    background-color: rgba(0, 0, 0 , 0.3);
+}

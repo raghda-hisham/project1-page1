@@ -1,0 +1,49 @@
+
+ /*test section*/
+ .test{
+    /* background-attachment: fixed; */
+    background-image:url(img/helloo.jpg) ;
+    height:200px;
+    margin: 160px 0;
+    position: relative;
+    background-repeat: repeat-x;
+    
+}
+.test-item{
+    width: 50%;
+    float: left;
+   padding: 20px 10px ;
+   text-transform: capitalize ;
+}
+.test-img{
+    display: inline-block;
+    height: 50px;
+    margin:0 20px 0 0;
+    border-radius: 50%;
+    position: absolute;/*hna 5leto absolute 3shan ykon fo2 kol 7aga w h2dr azbt el mkan b2a zay m ana 3yza*/
+    border: 2px solid  rgb(209, 91, 199);
+    
+}
+.first-div{
+   margin: 10px 0 10px 30px;
+   
+}
+.first-div-title{
+    display: inline-block;
+    position: relative;/*kda 5let el img fo2 w dh t7t*/
+    padding: 5px 0 5px 90px; 
+   }
+.first-div-title-des{
+    display: block;
+    margin: 0 90px;
+    color: yellow;
+}
+.sec-div-para{
+   padding: 10px 30px ;
+   font-size: 20px;
+}
+/*note*/
+/* lma ady ll parent elly wa5d relative padding bs ana 
+3ndy el ebn elly wa5d absolute maly el mkan kolo f kda msh hashof elly t7t ya3ni
+ k2n el padding mt2srsh w mt3mlsh bs hwa et3ml bs mawgod t7t el ebn msh bayn*/
+/* team section*/

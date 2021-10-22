@@ -1,0 +1,86 @@
+
+ .team{
+    background-color:rgb(243, 215, 215);
+    border: 0.5px solid aliceblue;
+ }
+ .team-item{
+     float: left;
+     /* border:2px solid rgb(193, 226, 241); */
+     width: 30%;
+     height: 300px;
+     text-align: center;
+     padding:15px 10px;
+     background-color: rgb(255, 247, 247);
+     position: relative;
+     margin-bottom: 30px;
+ }
+ .team-img{
+     position: relative;
+     width: 90%;   
+     margin: auto;   
+
+ }
+ .team-info-title{
+     margin: 7px 0;
+     text-transform: capitalize;
+     /* color:rgb(202, 202, 45); */
+     transition: color 0.5s;
+ }
+ .team-info-text{
+     text-transform: uppercase;
+     /* color:rgb(97, 95, 95); */
+     color: rgb(134, 183, 206);
+     font-size: 14px;
+ }
+ .team-img-img{
+     height: 200px;
+     width: 100%;
+ }
+ .team-overlay a{
+     height: 25px;
+    
+}
+.team-overlay>a .fa-facebook , .team-overlay>a .fa-twitter , .team-overlay>a .fa-linkedin{
+    display: block;
+    color: white;
+    background-color: rgb(120, 139, 248);
+    margin-bottom: 0;
+    margin-left:auto ;/*kda heroo7 ll a5r el shmal*/
+    width: 20px;
+    line-height: 25px;/*nfs 7agm el high f htkon fe el nos*/
+ }
+ .team-overlay{
+    position: absolute;
+    background:rgba(0, 0, 0, 0.5);
+    top: 0;
+    right: 0;/*kda k2ny b2olo width 100%*/
+    bottom: 0;
+    left: 0;
+    visibility: hidden;/*lw msh mawgooda hdos 3la el link 3ady*/
+    z-index: 1;
+ }
+ .team-item:hover .team-overlay{
+     opacity: 1;
+     visibility: visible;
+     
+ }
+ .team-item::after{
+    content: "";
+    position: absolute;
+    display: block;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    
+    width: 100%;
+    height: 0%;
+    transition: height 0.5s;
+ }
+ .team-item:hover::after{
+     height: 100%;
+ }
+ .team-item:hover  .team-info-title{
+    color:var(--bluecolor);
+ }

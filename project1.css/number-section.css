@@ -1,0 +1,32 @@
+
+
+/* number section*/
+.number{
+    margin:180px 0;
+    background-image: url(img/99.webp);
+    position: relative; 
+    height: 200px;
+  }
+  .number-item{
+      width: 20%;
+      float: left;
+      text-align: center;
+      height: 150px;
+      padding: 50px 0;
+  }
+  .number-item > i{
+      color:var(--mincolor);
+      margin-bottom:10px;
+  }
+  .number-item-title{
+      font-weight: bold;
+      font-size: 30px;
+      
+  }
+  .number-item-name{
+      font-weight: bold;
+      font-size: 20px;
+      padding: 30px;
+      text-transform: capitalize;
+  }
+  

@@ -1,0 +1,166 @@
+/*
+1-common styles
+2-general styles
+*/
+
+/* common styles:
+  1-overlay
+  2-opacity hover
+  3-section header
+  4-section padding
+  5-hover effect1(left to right)
+  6-hover effect2(top to down)
+*/ 
+.overlay{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background-color:rgba(142, 145, 145, 0.3);
+   top: 0;/*laz2 fe el top*/
+   left: 0;
+}
+
+.hover-opcity:hover{/* bdl m aktb buttom:hover{opacity:0.8} kda ana 3mlt class y3mli hover fe ay mkan h7ot el class feh f ana 7teet el class 3nd el button elly 3ayz hover*/
+    opacity: 0.8;
+}
+.hover-opcity{
+    transition: opacity 0.5s; /*kda ana 2oltlo a3ml el opcity 5lal 0.5s kan momken a7ot transition:0.5s bs kda he5leny a5od fe el  atr kolha 0.5s*/
+}
+.section-header{
+    text-align: center;
+    padding: 60px 0 20px 0;
+    
+}
+.section-header .header-title{
+    font-size: 35px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+.section-header .line{
+    height: 2px;
+    width: 40px;
+    background-color: var(--mincolor) ;
+    margin: 0 auto 50px auto;
+}
+.about-item:after {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    transition:width 0.5s;  
+} 
+.about-item:hover::after {
+     width: 100%;
+     opacity: 0.1;
+     background-color:black;
+}
+
+/*general styles*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*h5do fe css3*/
+}
+:root{
+    --mincolor:rgb(202, 202, 45) ;
+    --bluecolor:rgb(106, 176, 209);
+}
+h1 , h2 , h3 {
+    font-family: montserrat,sans-serif;
+}
+.clear{
+    clear: both;
+}
+body , button{
+    font-family: 'Varela Round', sans-serif; /* dh el font elly hst5do fe el mawq3 bta3y gbto mn el google front bardo mn nfs el mkan*/
+}
+.continer{
+    width: 80%;
+    margin: auto;
+}
+
+/*3-section styles*/
+/* 3.0 header */
+
+.header{
+    position: fixed;/*3shan ykon thabt tol el page bs he7wl el elment l inline-block f h3ml el width 100%*/
+    z-index: 1;
+    width: 100%;
+    background-color:rgba(142, 145, 145, 0.3);
+   
+}
+img{
+    width: 70px;
+    height: 30px;
+}
+.img{
+    width: 30%;
+    float: left;
+    margin-top: 5px;
+
+}
+.nav{
+    width: 70%;
+    float: left;
+    list-style: none;
+    text-align: right;
+}
+.nav > li{
+    display: inline-block;
+    text-align: right;
+     
+}
+.nav > li > a{
+    display: block;
+    padding: 15px 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+/*dlo2ty ana 3yza a3ml el 5t elly t7t home w kda f ana h3ml after t7t el a f kda hekon 7aga bt7sl b3dha 
+w tb3n hdelo display block 3shan ykon t7tha f ana 3ndy el 5t bezhr lma ashawr 3la el klma f kda h3ml el width
+ bt3o 0 w lma ashor 3la el klma width 100 leeh 3shan lw 5leto bs lma ashor kda msh hezhr mn el shmal ll ymeen zay m ana 3yza 
+ lkn lma a5leeh width 0 w lma ashor 100 kda heb2a mn el shmal ll ymeen w 3mlt ll home class active 3shan ana aslun fe el home w 3yza el 
+ 5t t7t el home w ndet el class dh w 5aleto dymn width 100 */
+.nav > li > a::after , .nav > li > a.active::after , .nav > li > a:hover::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: rgb(202, 202, 45);
+    transition: width 0.5s;
+    margin-top: 2px;
+}
+.nav > li > a:hover::after , .nav > li > a.active::after{
+    width: 100%;
+}
+.dropdown{
+    position: relative;
+}
+.dropdown-menu {
+    position: absolute;
+    text-align: center;
+    background-color: rgb(202, 202, 45);
+    width: 90px;
+    left: -50%;
+    top: 90%;
+    list-style: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s;
+}
+.dropdown:hover .dropdown-menu{
+    opacity: 1;/* 3yza y5od w2t lma ybd2 haroo7 ll bet2sr elly hwa dropdown-menu*/
+    visibility: visible;
+}
+.dropdown-menu a{
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: aliceblue;
+}
+

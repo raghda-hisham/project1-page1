@@ -1,0 +1,55 @@
+
+/*footer sec*/
+.footer{
+    background-color: rgb(107, 112, 112);
+    height: 200px;
+
+}
+.footer h2{
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: white;
+    padding: 20px 0;
+}
+.footer .icon-link{
+    display: inline-block; 
+    padding: 5px 7px;
+    height: 27px;
+    width: 25px;
+    background-color:var(--bluecolor) ;
+    color: white;
+    margin:0;
+    border-radius: 20%;
+   
+}
+.icon{
+    display: inline;
+    margin: 0 42.5%;
+}
+.copyright{
+    margin-top: 30px;
+    color: #c0bcbc;
+    text-align: center;
+    font-size: 13px; 
+}
+.copyright a{
+    color:var(--bluecolor) ;
+   
+}
+.icon-link{
+    position: relative;
+}
+.icon-link:after{
+    position: absolute;
+    display: block;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;  
+}
+
+.icon-link:hover::after{
+    background-color: rgba(0, 0, 0 , 0.5);
+}

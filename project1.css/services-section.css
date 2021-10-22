@@ -1,0 +1,60 @@
+
+/*services section*/
+.sec-header-title{
+    font-size: 35px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 70px 0 0px 0;
+}
+.sec-header-title::after{
+    content: "";
+    display: block; 
+    height: 2px;
+    width: 40px;
+    background-color:var(--mincolor) ;
+    margin: 20px auto 70px auto;
+
+}
+.service-item{
+    float: left;
+    width: 30%;
+    border: 1px solid rgb(193, 226, 241);
+    margin-bottom: 60px;
+    position: relative;
+    padding:20px 5px 20px 40px; 
+ }
+.fa-diamond{
+    position: absolute;
+    left:15px;
+    color: var(--mincolor);
+    top: 25px;
+}
+.service-item-title , .service-item-des{
+    padding: 0 0 0 30px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+   
+}
+
+.service-item::after{
+    width: 0%;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: width 0.5s;
+    position: absolute;
+    content: "";
+    display: block;
+    opacity: 0;
+    transition:width 0.5s;  
+
+}
+
+.service-item:hover::after{
+    width: 100%;
+    background-color: rgb(231, 250, 246);
+    opacity: 0.7;
+    z-index: -1;
+}

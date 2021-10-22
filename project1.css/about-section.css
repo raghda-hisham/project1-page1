@@ -1,0 +1,45 @@
+/*about section*/
+.about{
+    margin-bottom: 90px;
+    }
+    
+    i{
+        margin-bottom: 10px;
+       color:  black;
+       z-index: 1;
+    }
+    .about-item{
+        width: 30%;
+        float: left;
+        text-align: center;
+        border: 1px solid rgb(193, 226, 241);
+        padding: 30px 15px;
+        position: relative;
+        background-image: url(img/33.jpg);
+     }
+    
+     .mg{
+         margin:0 5%;
+     }
+     .about-item-title{
+         text-transform: capitalize;
+         margin-bottom:10px ;
+     }
+     .about-item-des{
+         line-height: 1.2;
+         margin-bottom: 10px;
+     }
+     .about-item a{
+         color: black;
+         text-transform: capitalize; 
+         z-index: 1;
+        
+     }
+     .about-item:hover a{
+         color: rgb(202, 202, 45);
+        
+     }
+     .about-item:hover i{
+        color: rgb(202, 202, 45);
+     }
+    
